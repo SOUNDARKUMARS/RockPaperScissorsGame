@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StonePaperScissors Game</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .spsCont{
+            height: 300px;
+            width: 500px;
+            color: white;
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body>
+    <div class="spsCont">
+        <h1 style="text-align: center; color: rgb(192, 164, 164);">Stone Paper Scissors Game</h1>
+        <h2>Computer's Choice: <span style="color: green;" id="cmpch"> xx</span></h2>
+        <h2>Player's Choice: <span style="color: green;"  id="plch">yy</span> </h2>
+        <h2>Result: <span style="color: green;" id="result">xxxxxyyyyy</span></h2>
+        <div class="spsbtns">
+            <button id="stone">Stone🪨</button>
+            <button id="paper">Paper🧻</button>
+            <button id="scissors">Scissors✂</button>
+        </div>
+    </div>
+    <script src="sps.js"></script>
+</body>
+</html>
